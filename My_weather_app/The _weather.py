@@ -46,7 +46,7 @@ def weather_data(city, data):
             current_time
 
         ])
-def get_weather_icon(description):
+def get_weather_icon(description):# helped by chatGPT
     description = description.lower()
     if "rain" in description:
         return "🌧️"
@@ -71,7 +71,7 @@ def display_weather_data(data):
         print(f" Weather: {icon} {desc}")
         print(f" Temperature: {data['main']['temp']} °C")
         print(f" Humidity: {data['main']['humidity']}%")
-        print(f" Wind Speed: {data['wind']['speed']} m/s")
+        print(f" Wind_Speed: {data['wind']['speed']} m/s")
         print(f" Time is: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     else:
         print(" Weather data is not available.")
@@ -87,3 +87,35 @@ if __name__ == "__main__":
         print("Weather data has been saved to 'weather_data.csv'")
     else:
         print("Failed to retrieve weather data.")
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Read from file
+df = pd.read_csv("weather_data.csv")
+
+#Brainstorm with chatGPT
+avg_data = df.groupby("City")[["Temperature (°C)", "Humidity(%)","Wind_speed  (m/s)"]].mean()
+cities = avg_data.index.tolist()
+temperatures = avg_data["Temperature (°C)"].tolist()
+humidities = avg_data["Humidity(%)"].tolist()
+wind_speed=avg_data["Wind_speed  (m/s)"].tolist()
+
+x = range(len(cities))
+bar_width = 0.2
+current_date = datetime.now().strftime("%Y-%m-%d %H:%M")
+# plot
+plt.figure(figsize=(10,5))
+plt.bar([i - bar_width/2 for i in x], temperatures, width=bar_width, label="Temperature (°C)", color="skyblue")
+# wind
+plt.bar([i - 3*bar_width/2 for i in x], wind_speed, width=bar_width, label="Wind_speed  (m/s)", color="red")
+# Humidity
+plt.bar([i + bar_width/2 for i in x], humidities, width=bar_width, label="Humidity (%)", color="lightgreen")
+
+plt.title(f"Average Temperature per City\nDate: {current_date}")
+plt.xlabel("City")
+plt.ylabel("Value")
+plt.xticks(x, cities)
+plt.legend()
+plt.grid(axis="y", linestyle="--", alpha=0.4)
+plt.tight_layout()
+plt.show()

@@ -5,3 +5,31 @@
 2025-05-24 13:25:57,699 - INFO - Weather data retrieved for city: baghdad
 2025-05-24 13:33:04,674 - INFO - Weather data retrieved for city: baghdad
 2025-05-24 13:34:17,114 - INFO - Weather data retrieved for city: baghdad
+2025-05-25 09:55:23,548 - INFO - Weather data retrieved for city: Baghdad
+2025-05-27 13:09:06,203 - INFO - Weather data retrieved for city: Baghdad
+2025-05-27 13:20:14,429 - INFO - Weather data retrieved for city: baghdad
+2025-05-27 13:20:16,341 - INFO - generated new fontManager
+2025-05-27 13:22:38,035 - INFO - Weather data retrieved for city: baghdad
+2025-05-27 13:24:05,121 - INFO - Weather data retrieved for city: budapest
+2025-05-27 13:24:31,803 - INFO - Weather data retrieved for city: amsterdam
+2025-05-27 13:31:27,203 - ERROR - Error retrieving weather data for Bahgad ,budapest: 404 Client Error: Not Found for url: http://api.openweathermap.org/data/2.5/weather?q=Bahgad%20,budapest&appid=bea77b05b06c5dc2dd317c3803cb7d16&units=metric&lang=en
+2025-05-27 13:31:52,360 - INFO - Weather data retrieved for city: baghdad
+2025-05-27 13:40:24,033 - INFO - Weather data retrieved for city: baghdad
+2025-05-27 13:41:28,177 - INFO - Weather data retrieved for city: budapest
+2025-05-27 13:43:08,879 - INFO - Weather data retrieved for city: baghdad
+2025-05-27 13:43:41,710 - INFO - Weather data retrieved for city: baghdad
+2025-05-27 13:49:30,310 - INFO - Weather data retrieved for city: baghdad
+2025-05-27 13:50:20,927 - INFO - Weather data retrieved for city: baghdad
+2025-05-27 13:50:56,926 - INFO - Weather data retrieved for city: baghdad
+2025-05-27 13:53:49,181 - INFO - Weather data retrieved for city: Bagdad
+2025-05-27 13:55:11,872 - INFO - Weather data retrieved for city: budapest
+2025-05-27 13:56:37,594 - INFO - Weather data retrieved for city: amsterdam
+2025-05-27 13:58:06,857 - INFO - Weather data retrieved for city: baghdad
+2025-05-27 13:58:42,186 - INFO - Weather data retrieved for city: bagdad
+2025-05-27 13:59:31,582 - INFO - Weather data retrieved for city: amsterdam
+2025-05-27 14:00:06,599 - INFO - Weather data retrieved for city: bagdad
+2025-05-27 14:00:49,904 - ERROR - Error retrieving weather data for budabest: 404 Client Error: Not Found for url: http://api.openweathermap.org/data/2.5/weather?q=budabest&appid=bea77b05b06c5dc2dd317c3803cb7d16&units=metric&lang=en
+2025-05-27 14:01:35,612 - INFO - Weather data retrieved for city: baghdad
+2025-05-27 14:02:33,339 - INFO - Weather data retrieved for city: baghdad
+2025-05-27 14:02:57,110 - ERROR - Error retrieving weather data for budabest: 404 Client Error: Not Found for url: http://api.openweathermap.org/data/2.5/weather?q=budabest&appid=bea77b05b06c5dc2dd317c3803cb7d16&units=metric&lang=en
+2025-05-27 14:03:21,325 - INFO - Weather data retrieved for city: budapest
