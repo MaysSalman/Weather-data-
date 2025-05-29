@@ -33,3 +33,4 @@
 2025-05-27 14:02:33,339 - INFO - Weather data retrieved for city: baghdad
 2025-05-27 14:02:57,110 - ERROR - Error retrieving weather data for budabest: 404 Client Error: Not Found for url: http://api.openweathermap.org/data/2.5/weather?q=budabest&appid=bea77b05b06c5dc2dd317c3803cb7d16&units=metric&lang=en
 2025-05-27 14:03:21,325 - INFO - Weather data retrieved for city: budapest
+2025-05-29 10:27:36,383 - INFO - Weather data retrieved for city: budapest
